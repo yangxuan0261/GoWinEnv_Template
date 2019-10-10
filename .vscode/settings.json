@@ -10,14 +10,14 @@
     "go.lintFlags": [],
     "go.vetFlags": [],
     "go.testFlags": ["-v"],
-    "go.formatTool": "gofmt",
+    "go.formatTool": "goimports", // 使用了 useLanguageServer 就用 goimports 
     "go.goroot": "D:/go",
     "go.gopath": "${workspaceRoot}",
     "go.autocompleteUnimportedPackages": true,
     "go.gocodePackageLookupMode": "go",
     "go.gotoSymbol.includeImports": true,
     "go.useCodeSnippetsOnFunctionSuggest": true,
-    "go.inferGopath": false,
+    "go.inferGopath": false, // 使用模块化后只能 false
     "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
     "go.liveErrors": {
         "enabled": true,
@@ -25,12 +25,6 @@
     },
     "go.useLanguageServer": true,
     "files.exclude": {
-        "src/github.com/*": false,
-        "src/golang.org/*": true,
-        "src/sourcegraph.com/*": true,
-        "src/google.golang.org/*": true,
-        "pkg/**/*": true,
-        "src/github.com/micro/go-plugins/registry/etcdv3": false,
-        "src/go.etcd.io/*": true,
+        "src/github.com/*": true,
     }
 }
