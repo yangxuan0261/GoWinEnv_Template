@@ -23,6 +23,12 @@
         "enabled": true,
         "delay": 0
     },
+    "go.alternateTools": {
+        "go-langserver": "gopls"
+    },
+    "[go]": {
+        "editor.formatOnSave": false
+    },
     "go.useLanguageServer": true,
     "files.exclude": {
         "src/github.com/*": true,
