@@ -10,7 +10,7 @@
     "go.lintFlags": [],
     "go.vetFlags": [],
     "go.testFlags": ["-v"],
-    "go.formatTool": "goimports", // 使用了 useLanguageServer 就用 goimports 
+    "go.formatTool": "gofmt", // 使用了 useLanguageServer 就用 goimports 
     "go.goroot": "D:/go",
     "go.gopath": "${workspaceRoot}",
     "go.autocompleteUnimportedPackages": true,
@@ -31,6 +31,6 @@
     },
     "go.useLanguageServer": true,
     "files.exclude": {
-        "src/github.com/*": true,
+        "src/github.com/*": false,
     }
 }
